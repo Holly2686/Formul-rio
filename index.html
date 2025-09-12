@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Formulário</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+           /* body{background-color: rgb(43, 220, 220)}
+            textarea{background-color: bisque;}
+            input{background-color: bisque;}
+            label{font-style: oblique;}*/
+            /*comentário dentro de CSS*/
+
+    
+            body {
+            margin:0;
+            background-image: url('custom-content-1.png'), url('mao-segurando-uma-caneta-e-preencher-um-formulario_23-2147613534.jpg');
+            background-position: left, right;
+            height:fit-content, min-content;
+            background-repeat: no-repeat, no-repeat;
+            background-size: initial, auto;
+            }
+  
+        </style>
+        <!--CSS INTERNO é esse que estamos usando, existe outra forma-->
+        <!--comentário dentro de html-->
+    </head>
+    <body> 
+            <div class="caixa"> <!--crio uma div para poder estilizar somente os 
+                elementos presentes dentro dela, se não crio uma div, todos os 
+                elementos dentro do documento, com o mesmo nome ficariam com mesmo estilo-->
+                
+                <form>
+                    <h2>Formulário de Contato</h2>
+                    <label for="nome">Nome</label>
+                    <input type="text" placeholder="Digite seu nome:" name="nome"/> 
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" placeholder="(XX)XXXXX-XXXX " name="telefone" pattern="[0-9]({2})[0-9]{4,5}[0-9]-{4}"/> 
+
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Digite seu email:" name="email"/> 
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" rows="4" placeholder="Digite sua mensagem:"></textarea>
+
+                    <button type="submit">Enviar</button>
+
+            </form>
+            </div>
+
+        
+    </body>
+
+</html>
